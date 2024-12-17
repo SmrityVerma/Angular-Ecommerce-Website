@@ -1,0 +1,72 @@
+.about-us {
+    /* font-family: 'Helvetica', 'Arial', sans-serif; */
+    color: #333;
+    line-height: 1.6;
+  }
+ 
+  .about-us h1, .about-us h2, .about-us h3 {
+    color: #000;
+  }
+ 
+  .welcome-section, .our-story-section, .our-values-section, .our-collection-section, .meet-the-team-section, .contact-us-section, .follow-us-section {
+    padding: 2rem;
+    background-color: #fff;
+  }
+ 
+  .our-story-section .content, .contact-us-section .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .our-story-section .image img, .our-collection-section .item img, .meet-the-team-section .member img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .our-values-section .values, .our-collection-section .collection, .meet-the-team-section .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+ 
+  .our-values-section .value, .our-collection-section .item, .meet-the-team-section .member {
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+  }
+ 
+  .contact-us-section .form, .contact-us-section .details {
+    flex: 1 1 45%;
+  }
+ 
+  .contact-us-section form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .contact-us-section form label {
+    margin-top: 1rem;
+  }
+ 
+  .contact-us-section form input, .contact-us-section form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+ 
+  .contact-us-section form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .follow-us-section .social-media a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+ 
+/* has context menu */
