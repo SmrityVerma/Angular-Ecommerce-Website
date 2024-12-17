@@ -1,4 +1,54 @@
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+<section id="contact" class="bgimage">
+  <div class="container-fluid contact-h">
+    <h1>Contact</h1>
+  </div>
+</section>
+
+<div class="contact-sec container">
+  <div class="row">
+    <div class="col-md-12 contact-info1">
+      <h2>Get In Touch With Us</h2>
+      <p>For More Information About Our Product & Services...</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 contact-info">
+      <p><i class="bi-geo-alt-fill"></i><strong> Address</strong><br>
+        236 5th SE Avenue, New York, NY 10000, United States</p>
+      <p><i class="bi-telephone-fill"></i><strong> Phone</strong><br>
+        Mobile: (+84) 546-6789<br>
+        Hotline: (+84) 456-6789</p>
+      <p><i class="bi-clock-fill"></i><strong> Working Time</strong><br>
+        Monday-Friday: 9:00 - 22:00<br>
+        Saturday-Sunday: 9:00 - 21:00</p>
+    </div>
+
+    <div class="col-md-6">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control form-control-lg" ngModel name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control form-control-lg" ngModel name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="form-control form-control-lg" ngModel name="subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control form-control-lg" rows="4" ngModel name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-block">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -27,4 +77,4 @@
       </div>
     </div>
   </div>
-  
+   -->
