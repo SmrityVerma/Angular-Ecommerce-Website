@@ -4,9 +4,19 @@ import { PropertyListingComponent } from './property-listing/property-listing.co
 import { AboutComponent } from './about/about.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  
+  {path:'home',component:HomeComponent},
+  {path:'about',component:AboutComponent},
+  {path:'contact',component:ContactFormComponent},
+  {path:'login',component:LoginComponent},
+  {path:'products',component:PropertyListingComponent},
+  
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
