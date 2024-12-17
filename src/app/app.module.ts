@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegistrationComponent,
     HeaderComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
